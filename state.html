@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaper</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="state.js"></script>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="background-video">
+    <source src="./images/CloudsAndGrass.mp4" type-"video/mp4">
+  </video>
+    <header>
+        <h1 id="h1">Landscaping Tycoon of the State</h1>
+        <p class="display-money">Total Money:</p>
+        <p class="display-money" id="total-money">$0</p>
+    </header>
+    <button type="button" class="button">
+      <div id="button_text">Click here to work 1 day
+      </div>
+      <div id="button_icon">
+        <ion-icon name="caret-forward-outline"></ion-icon>
+      </div>
+    </button>
+    <div id="inventories">
+        <span id="my-inventory">
+          <h3>
+              Your current crews 
+          </h3>
+          <p class="description">Your income is based on all your crews added together</p>
+          <ul class="selector js-buttons">
+              <li>
+                <p id="middle-schoolers" data-revenue=250></p>
+              </li>
+              <li>
+                <p id="college-students" data-revenue=350></p>
+              </li>
+              <li>
+                <p id="professional-team" data-revenue=600></p>
+              </li>
+            </ul>
+         </span>
+        <span id="store">
+          <h3>Available for Hire</h3>
+          <p class="description">Check back often!</p>
+          <p id="for-purchase"></p>
+          <ul class="store js-buttons">
+              <li>
+                  <button type="button" id="college-student-hire" data-cost=1000></button>
+              </li>
+              <li>
+                  <button type="button" id="professionals-hire" data-cost=3000></button>
+              </li>
+            </ul>
+          </span>
+          <span id="sale">
+            <h3>The Equipment Store</h3>
+            <p class="description">Buy new tools to make your teams more productive</p>
+            <ul class="equipment js-buttons">
+              <li>
+                  <button type="button" id="scissors" data-cost=1500></button>
+              </li>
+              <li>
+                  <button type="button" id="push-mowers" data-cost=5000></button>
+              </li>
+              <li>
+                  <button type="button" id="riding-mowers" data-cost=7500></butto>
+              </li>
+            </ul>
+          </span>
+    </div>
+    
+      <footer class="level-footer">
+        <div>
+          <p>Ready to start again? Click <a href=".">here</a> to reset.</p>
+      </div>
+        <div class="container">
+          <nav class="level-nav">
+            <ul>
+              <li><h3>Levels Available: </h3></li>
+              <li><a href="./index.html" class="footer-nav">Tycoon of the city | </a></li>
+              <li><a href="#" class="footer-nav">Tycoon of the state | </a></li>
+              <li><a href="#" class="footer-nav">Tycoon of the Country(coming soon)</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

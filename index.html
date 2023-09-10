@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaper</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="city.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="h1">Landscaping Tycoon</h1>
+        <p class="display-money">Total Money:</p>
+        <p class="display-money" id="total-money">$0</p>
+    </header>
+    <div id="inventories">
+        <span id="my-inventory">
+          <h3>Choose your tool to use:</h3>
+          <p class="description">What will you use for today's work?</p>
+          <ul class="selector js-buttons">
+              <li>
+                <button type="button" id="teeth" data-revenue=1></button>
+              </li>
+              <li>
+                <button type="button" id="lightsaber" data-revenue=5></button>
+              </li>
+              <li>
+                <button type="button" id="broken-wand" data-revenue=25></button>
+              </li>
+              <li>
+                <button type="button" id="new-wand" data-revenue=50></button>
+              </li>
+              <li>
+                  <button type="button" id="lawnmower" data-revenue=100></button>
+              </li>
+              <li>
+                  <button type="button" id="team" data-revenue=250></button>
+              </li>
+            </ul>
+         </span>
+        <span id="store">
+          <h3>Available for Purchase:</h3>
+          <p class="description">Check back often as I restock!</p>
+          <p id="for-purchase"></p>
+          <ul class="store js-buttons">
+              <li>
+                  <button type="button" id="lightsaber-purchase" data-cost=5></button>
+              </li>
+              <li>
+                  <button type="button" id="broken-wand-purchase" data-cost=25></button>
+              </li>
+              <li>
+                  <button type="button" id="new-wand-purchase" data-cost=100></button>
+              </li>
+              <li>
+                  <button type="button" id="lawnmower-purchase" data-cost=250></button>
+              </li>
+              <li>
+                  <button type="button" id="team-purchase" data-cost=500></button>
+              </li>
+            </ul>
+          </span>
+          <span id="sale">
+            <h3>The Pawn Shop:</h3>
+            <p class="description">If you're desperate for cash, we'll give you the best we can do.</p>
+            <p id="message">You have nothing to sell right now :-(. </p>
+            <ul class="sale js-buttons">
+              <li>
+                  <button type="button" id="lightsaber-sale" data-cost=2></button>
+              </li>
+              <li>
+                  <button type="button" id="broken-wand-sale" data-cost=12></button>
+              </li>
+              <li>
+                  <button type="button" id="new-wand-sale" data-cost=50></button>
+              </li>
+              <li>
+                  <button type="button" id="lawnmower-sale" data-cost=125></button>
+              </li>
+              <li>
+                  <button type="button" id="team-sale" data-cost=250></button>
+              </li>
+            </ul>
+          </span>
+    </div>
+    <div>
+        <p>Ready to start again? Click <a href=".">here</a> to reset.</p>
+    </div>
+      <footer class="level-footer">
+        <div class="container">
+          <nav class="level-nav">
+            <ul>
+              <li><h3>Levels Available: </h3></li>
+              <li><a href="#" class="footer-nav">Tycoon of the city | </a></li>
+              <li><a href="./state.html" class="footer-nav">Tycoon of the state | </a></li>
+              <li><a href="#" class="footer-nav">Tycoon of the Country(coming soon)</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+</body>
+</html>
