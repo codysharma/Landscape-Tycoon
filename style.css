@@ -208,6 +208,7 @@ h3 {
     right: 0;
     bottom: 0;
     padding-bottom: 1rem;
+    background-color: rgba(216, 214, 214, 0.685);
   }
 
   .footer-nav:hover {
