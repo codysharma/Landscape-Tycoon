@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 body {
     margin: 3em;
     padding: 0;
@@ -40,15 +44,7 @@ h3 {
 }
 
 
-#h1 {
-    grid-column: 1;
-}
-
-#display-money {
-    grid-column: 1;
-}
-
-#total-money {
+#h1, #display-money, #total-money {
     grid-column: 1;
 }
 
@@ -88,23 +84,7 @@ h3 {
     overflow: hidden;
   }
 
-#lightsaber {
-    display: none;
-}
-
-#broken-wand {
-    display: none;
-}
-
-#new-wand {
-    display: none;
-}
-
-#lawnmower {
-    display: none;
-}
-
-#team {
+#lightsaber, #broken-wand, #new-wand, #lawnmower, #team {
     display: none;
 }
 
@@ -112,39 +92,11 @@ h3 {
     display: ;
 }
 
-#broken-wand-purchase {
+#broken-wand-purchase, #new-wand-purchase, #lawnmower-purchase, #team-purchase {
     display: none;
 }
 
-#new-wand-purchase {
-    display: none;
-}
-
-#lawnmower-purchase {
-    display: none;
-}
-
-#team-purchase {
-    display: none;
-}
-
-#lightsaber-sale {
-    display: none;
-}
-
-#broken-wand-sale {
-    display: none;
-}
-
-#new-wand-sale {
-    display: none;
-}
-
-#lawnmower-sale {
-    display: none
-}
-
-#team-sale {
+#lightsaber-sale, #broken-wand-sale, #new-wand-sale, #lawnmower-sale, #team-sale {
     display: none;
 }
 
